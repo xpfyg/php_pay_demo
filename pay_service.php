@@ -3,7 +3,10 @@
 require_once('client.php');
 
 
+/*
+天工支付服务的部分接口demo
 
+*/
 
 
 
