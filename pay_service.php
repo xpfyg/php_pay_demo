@@ -21,10 +21,8 @@ channel	是	string			不同支付场景channel 值不同
 							1.alipay 支付宝 2.wxpay 微信
 							3.jdh5_pinganpay
 							场景2:收银台扫用户付款码收款 			1								
-							1.alibarcodepay_pinganpay(平安渠道) 
-							2.wxbarcodepay_pinganpay(平安渠道) 
-							3.alibarcodepay_ws(网商渠道) 
-							4.wxbarcodepay_ws(网商渠道)
+							1.barcode_pay
+							
 
 notify_url	是	string		异步回调地址
 amount	是	string			支付金额
