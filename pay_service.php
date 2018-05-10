@@ -93,6 +93,7 @@ ip	否	string					支付ip客户ip
 device_id	否	string			设备id
 sale_channel	否	string		业务id
 manual_journal	否	string		订单分账模式分账方式1 手动分账，0自动分账,默认为0
+channel	否	string        线上公众号支付: wxpaympsignonline,线下公众号支付wxpaympsign(默认),区别在于费率不同
 */
 //  $url = 'https://api.teegon.com/router?method=teegon.payment.charge.mppay&app_key='.$app_key.'&client_secret='.$client_secret;
 

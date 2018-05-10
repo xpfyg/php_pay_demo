@@ -11,6 +11,7 @@ function checkSign($params,$secret){
         );
 
    $sign = implode('', $sign);
+   //printf($sign);
    return strtoupper(md5($sign));
 }
 
@@ -54,24 +55,27 @@ sign - 签名，用于验证通知参数的签名
 
 
 $params = array(
-            'order_no' =>'10817122801062627523488',
-            'channel' =>'alipay_pinganpay',
+            'order_no' =>'B510311822308309',
+            'channel' =>'wxpaympsignonline_pinganpay',
             'amount' => '0.01',
-            'metadata' => '["\u548c\u827a\u5e7f\u544a"]',
-            'domain_id'=>'xh17vaw3',
+            'metadata' => "{\"001\":\"001\"}",
+            'domain_id'=>'3v5***bj4',
             'buyer_openid'=>'',
-            'charge_id'=>'946248007576199168',
+            'charge_id'=>'994453574144499712',
            // 'code'=>'teegon_wxpay',
             'device_info'=>'',
-            'buyer'=>'189****8776',
-            'bank'=>'',
+            'buyer'=>'oRrr3035lIdLrXHhkN4g0nmjKSVU',
+            'bank'=>'CFT',
             'is_success'=>'true',
-            'pay_time'=>'1514438109',
-            'payment_no'=>'2017122813144002429838091541',
+            'pay_time'=>'1525931312',
+            'payment_no'=>'2018051013462301707033364178',
             'real_amount'=>'0.01',
             'status'=>'',
-            'timestamp'=>'1514438117'
+            'timestamp'=>'1525931450'
             );
 
 $sign = checkSign($params,$client_secret);
 printf($sign);
+
+/*
+{"sign":"CAF9E933FD25371C2E866D8329C0B90F","amount":"0.01","bank":"CFT","buyer":"oRrr3035lIdLrXHhkN4g0nmjKSVU","buyer_openid":"","channel":"wxpaympsignonline_pinganpay","charge_id":"994453574144499712","device_info":"","domain_id":"3v5pjbj4","is_success":"true","metadata":"{\"001\":\"001\"}","order_no":"B510311822308309","pay_time":"1525931312","payment_no":"2018051013462301707033364178","real_amount":"0.01","status":"","timestamp":"1525931450"}*/

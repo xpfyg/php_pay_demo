@@ -22,4 +22,4 @@ function vpost($url,$data){ // 模拟提交数据函数
 }
 
 $app_key = "*****";
-$client_secret  = "*******";
+$client_secret  = "*****";
