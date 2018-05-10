@@ -51,9 +51,10 @@ teegon.payment.charge.pay
 order_no	是	string		订单号
 channel	是	string			不同支付场景channel 值不同 
 							场景1:微信公众号内支付
-							1.wxpaymp_pinganpay  微信 商户后银行通道为平安 
-							2.wxpaymp_ipspay 	 微信 商户后银行通道ips
-							2.jdh5_pinganpay 	 京东H5支付 商户后银行通道为平安 
+							1.wxpaymp       线下公众号支付
+							2.wxpaymponline 线上公众号支付
+							两者费率不同
+			
 							
 
 notify_url	是	string		异步回调地址
@@ -67,7 +68,7 @@ auth_code	否	string		用户付款码
 */
 //  $url = 'https://api.teegon.com/router?method=teegon.payment.charge.pay&app_key='.$app_key.'&client_secret='.$client_secret;
 
-// $data =array('order_no'=>'20180418003','channel'=>'wxpaymp_pinganpay','notify_url'=>'http://f09d1e6c.ngrok.io/pay/notify/mybank','return_url'=>'http://www.a.com','amount'=>'0.01','subject'=>'test','metadata'=>'{"001":"001"}','client_ip'=>'127.0.0.1');
+// $data =array('order_no'=>'20180418003','channel'=>'wxpaymp','notify_url'=>'http://f09d1e6c.ngrok.io/pay/notify/mybank','return_url'=>'http://www.a.com','amount'=>'0.01','subject'=>'test','metadata'=>'{"001":"001"}','client_ip'=>'127.0.0.1');
 // $result = vpost($url,$data);
 //  print_r($result);
 
