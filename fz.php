@@ -26,3 +26,6 @@ profit_content	是	string	分帐数据
 $data =array('charge_id'=>'******','profit_content'=>'[{"account_id":"子帐号id","amount":0.1,"fee":0.02,"comment":"订单交易金额"},{"account_id":"子帐号id","amount":0.1,"fee":0.02,"comment":"订单交易金额"}]');
 $result = vpost($url,$data);
  print_r($result);
+
+
+ 

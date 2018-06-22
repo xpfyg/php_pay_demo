@@ -21,5 +21,5 @@ function vpost($url,$data){ // 模拟提交数据函数
     return $tmpInfo; // 返回数据
 }
 
-$app_key = "*****";
-$client_secret  = "*****";
+$app_key = "****";
+$client_secret  = "****"; //

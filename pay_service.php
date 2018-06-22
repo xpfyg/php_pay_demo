@@ -19,9 +19,9 @@ order_no	是	string		订单号
 channel	是	string			不同支付场景channel 值不同 
 							场景1:pc网上商城生成订单二维码 
 							1.alipay 支付宝 2.wxpay 微信
-							3.jdh5_pinganpay
+						
 							场景2:收银台扫用户付款码收款 			1								
-							1.barcode_pay
+							1.barcodepay
 							
 
 notify_url	是	string		异步回调地址
@@ -51,10 +51,9 @@ teegon.payment.charge.pay
 order_no	是	string		订单号
 channel	是	string			不同支付场景channel 值不同 
 							场景1:微信公众号内支付
-							1.wxpaymp       线下公众号支付
-							2.wxpaymponline 线上公众号支付
-							两者费率不同
-			
+							1.wxpaymp       公众号支付
+
+							2.alih5     支付宝(可在浏览器调起支付宝)
 							
 
 notify_url	是	string		异步回调地址
