@@ -18,7 +18,7 @@ teegon.payment.charge.paycode
 order_no	是	string		订单号
 channel	是	string			不同支付场景channel 值不同 
 							场景1:pc网上商城生成订单二维码 
-							1.alipay 支付宝 2.wxpay 微信
+							1.alih5 支付宝 2.wxpay 微信
 						
 							场景2:收银台扫用户付款码收款 			1								
 							1.barcodepay
